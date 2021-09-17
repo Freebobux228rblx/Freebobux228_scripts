@@ -37,7 +37,7 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(-89.9058228, 35.5401726, 8445.28516);
+tp(-89.9058227, 35.5401726, 8445.28516);
 
 wait (18)
 
