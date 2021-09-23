@@ -77,12 +77,3 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-154.106
 wait(0.01)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-149.10607910156, 3.525892496109, 59.108959197998)
 wait(0.01)
---Myst box autofarm
-game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "Ss autofarm";
-            Text = "Myst`s box tp In 2-4 sec";
-                    })
-                 wait(3.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(214.99499511719, 4.5258936882019, 44.083065032959)
-wait(0.01)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-358.52059936523, 4.4758920669556, 11.717916488647)
