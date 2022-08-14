@@ -11,7 +11,7 @@ if KAVO_LOADED then
     return
  end
 local Kavo,tween,tweeninfo,input,run = {},game:GetService("TweenService"),TweenInfo.new,game:GetService("UserInputService"),game:GetService("RunService")
-getgenv().KAVO_LOADED
+getgenv().KAVO_LOADED = true
 local Utility = {}
 local Objects = {}
 function Kavo:DraggingEnabled(frame, parent)
