@@ -2,7 +2,7 @@
   I am not the owner of this UI,
   Check original of KavoUI here: https://github.com/xHeptc/Kavo-UI-Library/blob/main/source.lua
 ]]
-if KAVO_LOADED == true then
+if KAVO_LOADED then
     game.StarterGui:SetCore("ChatMakeSystemMessage", {
                Text = "Already running!";
                Color = Color3.fromRGB(255,0,0);
@@ -10,12 +10,8 @@ if KAVO_LOADED == true then
            })
     return
  end
-local Kavo = {}
-local tween = game:GetService("TweenService")
-local tweeninfo = TweenInfo.new
-local input = game:GetService("UserInputService")
-local run = game:GetService("RunService")
-pcall(function() getgenv().KAVO_LOADED = true end)
+local Kavo,tween,tweeninfo,input,run = {},game:GetService("TweenService"),TweenInfo.new,game:GetService("UserInputService"),game:GetService("RunService")
+getgenv().KAVO_LOADED
 local Utility = {}
 local Objects = {}
 function Kavo:DraggingEnabled(frame, parent)
@@ -298,7 +294,7 @@ function Kavo.CreateLib(kavName, themeList)
 			Size = UDim2.new(0,0,0,0),
 			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
 		}):Play()
-        pcall(function() getgenv().KAVO_LOADED = false end)
+        getgenv().KAVO_LOADED = false
         wait(1)
         ScreenGui:Destroy()
     end)
