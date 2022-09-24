@@ -1,4 +1,4 @@
 return {
-["LatestVersion"] = "1b1b2",
+["LatestVersion"] = "1b1b3",
 ["LatestVersionKavoUI"] = "1b1b1"
 }
