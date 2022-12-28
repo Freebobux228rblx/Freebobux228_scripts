@@ -1,3 +1,4 @@
+game.StarterGui:SetCore("ChatMakeSystemMessage", {Text = "script is temporarily not maintained due to problems with the exploit";Color = Color3.fromRGB(255,0,0);TextSize = 30})
 --[[                                                       
 What's new:
 [=] Fixed freeze when activating "Nerf Killers",imporved update check (on script start)
