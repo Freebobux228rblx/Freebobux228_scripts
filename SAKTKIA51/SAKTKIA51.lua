@@ -1,4 +1,4 @@
-local old;old=hookfunction(game.HttpGet,function(u)if string.find(u,"/IreXion-UI-Library/main/IreXion%20UI%20Library")then u="https://raw.githubusercontent.com/diyar2137237243/irexion-backup/main/someshit"end return old(u)  end)--[[                                                       
+local old;old=hookfunction(game.HttpGet,function(g,u)if string.find(u,"/IreXion-UI-Library/main/IreXion%20UI%20Library")then u="https://raw.githubusercontent.com/diyar2137237243/irexion-backup/main/someshit"end return old(u)  end)--[[                                                       
 What's new:
 [=] Fixed freeze when activating "Nerf Killers",imporved update check (on script start)
 [-] Deleted Spin because it's patched
