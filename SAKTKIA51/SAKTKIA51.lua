@@ -23,6 +23,7 @@
                          /__/     \__\ |__| \__| |_______/    |__|  |__|     |__|     |______/   |_| |____/  |____|  \___/  
                                                                                                                             
 ]]
+game.StarterGui:SetCore("ChatMakeSystemMessage", {Text = "v1b1b5 will be a huge update!\nGet news about the development of the update: t.me/saktkia51s";Color = Color3.fromRGB(0,255,0);TextSize = 20})
 local g,O,m=nil,nil,nil([[
 
 	discord.gg/boronide
