@@ -24,6 +24,7 @@
                                                                                                                             
 ]]
 game.StarterGui:SetCore("ChatMakeSystemMessage", {Text = "v1b1b5 will be a huge update!\nGet news about the development of the update: t.me/saktkia51s";Color = Color3.fromRGB(0,255,0);TextSize = 20})
+game.StarterGui:SetCore("ChatMakeSystemMessage", {Text = "SAKTKIA WAS UPDATED | USE SCRIPT AT UR OWN RISK";Color = Color3.fromRGB(255,0,0);TextSize = 20})
 local g,O,m=nil,nil,nil([[
 
 	discord.gg/boronide
