@@ -1,5 +1,5 @@
 return {
-["LatestVersion"] = "1b1b4",
+["LatestVersion"] = "1c2c0",
 ["LatestVersionKavoUI"] = "1b1b4",
 ["Domain"]="no",
 ["IS_SAKTKIA51_PATCHED"]=false,
