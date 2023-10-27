@@ -1,3 +1,4 @@
+game.StarterGui:SetCore("ChatMakeSystemMessage", {Text = "https://t.me/saktkia51s/33 PLEASE READ!!!";Color = Color3.fromRGB(255,0,0);TextSize = 20})
 --[[
     [+] Returned Juggernaut mode support:
      => [+] Get gun in mode
