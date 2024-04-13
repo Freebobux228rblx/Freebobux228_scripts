@@ -2,7 +2,7 @@ return {
 ["LatestVersion"] = "1c2c1",
 ["LatestVersionKavoUI"] = "1b1b4",
 ["Domain"]="no",
-["ach"]="8d8105ffa98be522d6f66d7d6698122730254358ff2d7267bd1d3f7074a908f43a66a0117488aae5b000efa7234b1df8",
-["IS_SAKTKIA51_PATCHED"]=true,
+["ach"]="1a8df7f558a81148f3146cc6d7cae52bd341b5461caf0d21d37291a29f96ad2796bc957bcd8e88ca79f5618af0b272f9",
+["IS_SAKTKIA51_PATCHED"]=false,
 ["SCRIPT_LINK"]="https://ify.ac/diV"
 }
