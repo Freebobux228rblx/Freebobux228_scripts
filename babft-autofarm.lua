@@ -1,27 +1,46 @@
---notif 
-game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "Babft autofarm script 1.0.4";
-            Text = "Babft autofarm script Starts working. Made by Freebob_ux228#1814.";
-                    })
-
---script
-while wait() do
-    function tp(...)
-        local params = {...}
-        local tween, err = pcall(function()game:GetService "TweenService":Create(game:GetService"Players".LocalPlayer.Character["HumanoidRootPart"],TweenInfo.new(2, Enum.EasingStyle.Quad),{CFrame = CFrame.new(params[1], params[2], params[3])}):Play()end)
-        if not tween then
-            return err
-        end
+game:GetService"StarterGui":SetCore("SendNotification",{Title = "BABFT autofarm 1.0.5";Text = "Autofarm is working. Made by Freebob_ux228.";})
+local TweenS,LocalPlayer=game:GetService"TweenService",game.Players.LocalPlayer
+local t,f=true,false
+local function tp(loc,speed)
+    local CFWillBe=loc
+    if type(loc)=="table"then
+        CFWillBe=CFrame.new(unpack(loc))
     end
-    tp(-55.1682892, 71.8159409, 1298.73474)
-    wait(2)
-    tp(-89.9058227, 35.5401726, 8445.28516)
-    wait(18)
-    tp(-75.2286987, 45.7501411, 9307.02344)
-    wait(3)
-    tp(-54.9039154, -360.700012, 9523.64551)
-    wait(2)
-    tp(-51.9489594, -345.982483, 9497.56055)
-    wait(7)
+    local t=TweenS:Create(LocalPlayer.Character["HumanoidRootPart"],TweenInfo.new(speed,Enum.EasingStyle.Quad),{CFrame=CFWillBe})
+    t:Play()
+    if speed~=0 then
+        t.Completed:Wait()
+    end
+    if speed==0 then
+        LocalPlayer.Character.HumanoidRootPart.Anchored=t
+        task.wait(.6)
+        LocalPlayer.Character.HumanoidRootPart.Anchored=f
+    end
 end
-
+local function lol()
+    pcall(function()
+        LocalPlayer.Character:WaitForChild"HumanoidRootPart"
+        tp({-52, 67.5, 815},1)
+        tp({-77, 82.5, 8626},20)
+        tp(workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame,0)
+    end)
+end
+LocalPlayer.CharacterAdded:Connect(lol)
+workspace.Gravity=.55
+lol()
+local getcon=getconnections or get_signal_cons
+if getcon then --taked from infinite yield
+	for _,v in pairs(getcon(LocalPlayer.Idled)) do
+		if v["Disable"]then
+			v["Disable"](v)
+		elseif v["Disconnect"]then
+			v["Disconnect"](v)
+		end
+	end
+else
+	local VirtualUser=game:GetService("VirtualUser")
+	LocalPlayer.Idled:Connect(function()
+		VirtualUser:CaptureController()
+		VirtualUser:ClickButton2(Vector2.new())
+	end)
+end
